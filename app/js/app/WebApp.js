@@ -4,10 +4,10 @@ define([
     'controllers/index', 'routers/mainRouter' ],
 function( $, _, Backbone, Marionette, MainController, MainRouter ) {
   var App;
-  if( !window.CityBotApp ){
+  if( !window.WebApp ){
 
 
-    App = window.CityBotApp = new Backbone.Marionette.Application();
+    App = window.WebApp = new Backbone.Marionette.Application();
 
     App.addRegions({
       'main' : '#zero'
@@ -31,7 +31,7 @@ function( $, _, Backbone, Marionette, MainController, MainRouter ) {
     return App;
   }
   else{
-    return window.CityBotApp;
+    return window.WebApp;
   }
 
 });

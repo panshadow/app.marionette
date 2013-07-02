@@ -46,6 +46,6 @@ require.config({
   }
 });
 
-define(['app/App'], function(){
-  CityBotApp.start();
+define(['app/WebApp'], function(){
+  WebApp.start();
 });

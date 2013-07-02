@@ -6,12 +6,12 @@ function(Backbone, Marionette){
     },
     index: function(){
       require(['views/mainView'],function(View){
-        CityBotApp.main.show( new View() );
+        WebApp.main.show( new View() );
       });
     },
     opt: function(){
       require(['views/optView'], function(View){
-        CityBotApp.main.show( new View() );
+        WebApp.main.show( new View() );
       })
     }
   })
